@@ -58,7 +58,7 @@ form.addEventListener("submit", function(event) {
             }
         };
         
-        xhttp.open('POST', 'text.php', true);   
+        xhttp.open('POST', '', true);   
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");                
         xhttp.send(params);
 
