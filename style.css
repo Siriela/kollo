@@ -1,0 +1,219 @@
+*:focus {
+    outline: dotted 1px #000;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5ece0;
+    margin: 0;
+}
+.ingress {
+    width: 45%;
+    font-size: 20px;
+}
+.article__content {
+    background-color: #fff;
+    padding: 16px;
+    width: 67%;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.aktiviteter__wrapper {
+    display: flex;
+}
+.form__label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.checkbox-label {
+    margin-right: 20px;
+}
+.bild {
+    background-color: #f2f2f2;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.aktiviteter__card__rubrik,
+.aktiviteter__card__text {
+    padding: 16px;
+    margin: 0;
+    
+}
+
+.aktiviteter__card {
+    text-decoration: none;
+}
+.aktiviteter__card:hover {
+    border-color: #aaa;
+}
+.aktiviteter__card:hover .aktiviteter__card__rubrik,
+.aktiviteter__card:hover .aktiviteter__card__text {
+    text-decoration: underline;
+}
+
+.aktiviteter__card__rubrik {
+    color: #000;
+}
+.aktiviteter__card__text {
+    padding: 0 16px 16px;
+}
+.aktiviteter__card {
+    border: 1px solid #f2f2f2;
+    margin-right: 10px;
+    width: 25%;
+    color: #000;
+}
+
+.aktiviteter__card:last-child {
+    margin: 0;
+}
+
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;;
+}
+
+#anmalan {
+    width: 67%;
+}
+.form__helpertext{
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.form__input {
+    width: 75%;
+    height: 20px;
+}
+.form__select {
+    width: 15%;
+    height: 30px;
+}
+.form__input,
+.form__select {
+    font-size: 16px;
+}
+.checkbox {
+    margin-left: 0;
+}
+fieldset {
+    margin-bottom: 10px;
+}
+
+.form__button {
+    height: 30px;
+    background-color: #12125e;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+}
+.form__button:hover {
+    background-color: #b0b0ea;
+    color: #000;
+}
+
+.add-button:before {
+    background-image: url('bilder/add.svg');
+}
+.icon-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon-info:before {
+    background-image: url('bilder/info.png');
+}
+.add-button {
+    border: none;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.icon-info,
+.radera {
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-right: 5px;
+}
+.icon-info:before,
+.add-button:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+}
+
+.radera {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    background-color: transparent;
+}
+.radera::after {
+    content: '';
+    display: block;
+    background-image: url('bilder/papperskorg.png');
+    background-size: 12px;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+#intresselista {
+    margin-top: 16px;
+}
+.intressepost {
+    display: block;
+    position: relative;
+    padding: 5px;
+}
+.intressepost:nth-child(even) {
+    background-color: #ecebf2;
+}
+
+hr {
+    margin: 50px 0;
+    width: 67%;
+}
+
+@media(max-width: 768px) {
+    .aktiviteter__wrapper {
+        flex-direction: column;
+    }
+    .aktiviteter__card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .article__content {
+        width: 95%;
+    }
+    hr {
+        width: 100%;
+    }
+    #anmalan {
+        width: 100%;
+    }
+    .form__button {
+        margin-bottom: 16px;
+    }
+    .ingress {
+        width: 100%;
+    }
+    .form__select {
+        width: 25%;
+    }
+}
